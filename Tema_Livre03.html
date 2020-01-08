@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Meus Livros</title>
+        <link rel="stylesheet" href="CSS3.css"/>
+        <link rel="icon" href="Imagens/TL/books.jpg"/>
+           <script>
+            function AbrirMenu() {
+                if ( painel_menu.style.left == "0px") {
+                   painel_menu.style.left = "-250px";
+                    opc1.style.display = "none";
+                    opc2.style.display = "none";
+                }
+                else {
+                    painel_menu.style.left = "0px";
+                }
+            }
+            function ExibirOpc1() {
+                opc1.style.display = "block";
+                opc2.style.display = "none";
+            }
+             function ExibirOpc2() {
+                opc1.style.display = "none";
+                opc2.style.display = "block";
+            }
+            function LigarImagem(){
+                if (img_lig.src.endsWith("Imagens/off.png")){
+                    img_lig.src = "Imagens/on.png";
+                    bt_lig.value = "Desligar";
+                }
+                else {
+                    img_lig.src = "Imagens/off.png";
+                    bt_lig.value = "Ligar";
+                }
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        <header> Desejados <img src="Imagens/TL/presents.png" alt="presente" title="Presentes" width="5%"/> </header>
+     <div id="menu" onclick="AbrirMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+       <div id="painel_menu">
+           <a href="Tema_Livre.html"><input type="button" value="Meus Livros" onclick="ExibirOpc1()"/></a>
+           <a href="Tema_Livre02.html"><input type="button" value="Favoritos" onclick="ExibirOpc2()"/></a>
+        </div> 
+        <div class="painel_principal" id="opc1">
+        <p>Liga e Desliga</p>
+            <input type="button" id="bt_lig" value="Aperte" onclick="LigarImagem()"/>
+            <br /><br />
+            <img id="img_lig" src="Imagens/off.png" alt="Liga e Desliga"/>                
+        </div> 
+         
+        </div> 
+        <br />
+	     <div class="container2">
+        <table>
+            <tr>
+              <td><div class="img"><a href="#div01"><img src="Imagens/TL/desejaos/dv01.jfif" alt="Divergente" title=" Divergente"/></a></div>           </td>
+                <td><div class="img"><a href="#div02"><img src="Imagens/TL/desejaos/dv02.jfif" alt="Insurgente" title="Insurgente" /></a></div></td>
+                <td><div class="img"><a href="#div03"><img src="Imagens/TL/desejaos/dv03.jfif" alt="Convergente" title="Convergente" /></a></div></td>
+                <td><div class="img"><a href="#jv01"><img src="Imagens/TL/desejaos/jv01.jfif" alt="Jogos Vorazes" title="Jogos Vorazes" /></a></div>   </td>
+                <td><div class="img"><a href="#jv02"><img src="Imagens/TL/desejaos/jv02.jfif" alt="Em Chamas" title="Em Chamas"/></a></div></td>
+                <td><div class="img"><a href="#jv03"><img src="Imagens/TL/desejaos/jv033.jfif" alt="Esperança" title="Esperança" /></a></div></td>
+                 </tr> 
+                    </table>
+                </div>
+        <br />
+        <div class="container3">
+        <h4 id="div01">Divergente</h4>
+            <p> Beatrice Prior tem 16 anos e está prestes a enfrentar o momento mais importante de sua vida, a Cerimônia de Escolha, quando decidirá à qual das cinco facções em que a sociedade é dividida irá passar o resto de seus dias: Abnegação, Amizade, Audácia, Erudição ou Franqueza. A opção significa continuar com sua família ou abandoná-la para sempre, um dilema que todos os adolescentes têm de enfrentar. Quando o teste de aptidão aponta um resultado inesperado – Divergente –, Beatrice se vê forçada a encarar uma realidade para a qual talvez não esteja preparada. Mas Tris, o nome que ela assume quando se junta à Audácia, fará de tudo para sobreviver à sua nova e violenta facção. Primeiro livro da trilogia distópica criada pela escritora estreante Veronica Roth, Divergente sacudiu o mercado da ficção para jovens adultos. Traduzido para mais de 20 países e adquirido para adaptação no cinema pela Summit Entertainment, o livro manteve-se por meses na lista dos mais vendidos do New York Times.    </p>
+        
+        </div>
+        <br />
+        <div class="container3">
+        <h4 id="div02">Insurgente</h4>
+            <p> Nesse livro vemos a continuação de tudo o que aconteceu em Divergente, de como as atitudes tomadas pelos membros da Erudição fizeram com que tudo se tornasse um grande caos. Vemos nesse livro muitas respostas para questões que haviam ficado em aberto do final do livro anterior, assim como o motivo que levaram a criação desse sistema de facções. </p>
+                </div>
+        <br />
+          <div class="container3">
+        <h4 id="div03">Convergente</h4>
+            <p> Estava ansiosa pela conclusão de Divergente. Depois de dois livros acompanhando a saga da Tris, estava curiosa para descobrir a verdade por trás do mundo das facções.
+Após a exibição do vídeo que pôs abaixo a vida como as pessoas até então conheciam, Tris, Christina e Cara foram presas, em uma cela na sede da Erudição, pelo exército de sem facções controlado por Evelyn. Tobias vai até lá para lhe informar quais são os planos da sua mãe com relação ao vídeo, que mostrou que todo o sistema de crença deles não passava de um experimento cientifico. Evelyn não pretende fazer nada com relação a isso, apenas reconstruir a cidade sem o sitema de facções.</p>
+                </div>
+        <br />
+         <div class="container3">
+        <h4 id="jv01">Jogos Vorazes</h4>
+            <p> A história ocorre em um futuro pós-apocalíptico e é narrada em primeira pessoa pela personagem Katniss Everdeen. O enredo do livro se desenvolve sob a sua rotina e sua relação com o melhor amigo, Gale (que possui um amor platônico por ela), a irmã Primrose e sua mãe. Sua moradia é o “Distrito 12”, uma região de um país de nome Panem. Comandados a mãos de ferro pelo presidente Coriolanus Snow, os cidadãos, com exceção dos da Capital, sofrem há 74 anos com a permanência dos chamados “Jogos Vorazes”, uma batalha televisionada na qual todos os participantes devem lutar até a morte. Tudo começou após uma rebelião dos distritos lembrada como os “Dias Escuros”. Anteriormente, havia a existência de 13 ramificações. Com a oposição das regiões contra a Capital, o décimo terceiro distrito é exterminado e os jogos são instituídos. </p>
+                </div>
+        <br />
+         <div class="container3">
+        <h4 id="jv02">Em Chamas</h4>
+            <p> Nesse livro vemos a continuação de tudo o que aconteceu em Divergente, de como as atitudes tomadas pelos membros da Erudição fizeram com que tudo se tornasse um grande caos. Vemos nesse livro muitas respostas para questões que haviam ficado em aberto do final do livro anterior, assim como o motivo que levaram a criação desse sistema de facções. </p>
+                </div>
+        <br />
+         <div class="container3">
+        <h4 id="jv03">Esperança</h4>
+            <p> Nesse livro vemos a continuação de tudo o que aconteceu em Divergente, de como as atitudes tomadas pelos membros da Erudição fizeram com que tudo se tornasse um grande caos. Vemos nesse livro muitas respostas para questões que haviam ficado em aberto do final do livro anterior, assim como o motivo que levaram a criação desse sistema de facções. </p>
+                </div>
+        <br />
+        
+        
+        <a href="Pagina-Inicial.html">Página Inicial</a>
+        <a href="Fontes.html">Fontes</a>
+    </body>
+</html>

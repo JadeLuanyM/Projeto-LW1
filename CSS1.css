@@ -1,0 +1,73 @@
+body {
+    background-color: rosybrown;
+    font-family: cursive, TimesNew Roman;
+    font-size: 12pt;
+   }
+header {
+    background: linear-gradient(to right, skyblue 10%, white 50%, skyblue 100%);
+    color: brown;
+    font-size: 3rem;
+    text-shadow: 4px 4px white;
+    padding: 18px;
+    text-align: center;
+}
+nav {
+    background-color: aliceblue;
+    width: 100%;
+    height: 60px;
+    position:absolute;
+    text-align: center;
+    border-bottom: 9px double aliceblue;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 20pt;
+    color: aliceblue;
+    z-index: 5;
+
+}
+.foto_logo {
+    width: 100%;
+    right: 60px;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: aliceblue;
+    width: 90%;
+    
+}
+
+.container2{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: aliceblue;
+    width: 90%;
+    
+}
+h1 {
+    color: brown;
+    font-family:fantasy;
+}
+a {
+    text-decoration: none;
+    color: skyblue;
+}
+a:hover {
+    font-weight: bold;
+    color: brown;
+    
+}
+#oque:hover {
+     text-shadow: 3px 3px skyblue;
+    
+}
+#comofunciona:hover {
+    
+}
+#hist:hover {
+    
+}

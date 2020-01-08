@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Meus Livros</title>
+        <link rel="stylesheet" href="CSS3.css"/>
+        <link rel="icon" href="Imagens/TL/books.jpg"/>
+           <script>
+            function AbrirMenu() {
+                if ( painel_menu.style.left == "0px") {
+                   painel_menu.style.left = "-250px";
+                    opc1.style.display = "none";
+                    opc2.style.display = "none";
+                }
+                else {
+                    painel_menu.style.left = "0px";
+                }
+            }
+            function ExibirOpc1() {
+                opc1.style.display = "block";
+                opc2.style.display = "none";
+            }
+             function ExibirOpc2() {
+                opc1.style.display = "none";
+                opc2.style.display = "block";
+            }
+            function LigarImagem(){
+                if (img_lig.src.endsWith("Imagens/off.png")){
+                    img_lig.src = "Imagens/on.png";
+                    bt_lig.value = "Desligar";
+                }
+                else {
+                    img_lig.src = "Imagens/off.png";
+                    bt_lig.value = "Ligar";
+                }
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        <header> Meus Livros <img src="Imagens/TL/livros.png" alt="livro" title="Livros" width="5%"/> </header>
+     <div id="menu" onclick="AbrirMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+       <div id="painel_menu">
+           <a href="Tema_Livre02.html"><input type="button" value="Favoritos" onclick="ExibirOpc1()"/></a>
+           <a href="Tema_Livre03.html" ><input type="button" value="Desejados" onclick="ExibirOpc2()"/> </a>
+        </div> 
+        <div class="painel_principal" id="opc1">
+            <input type="button" id="bt_lig" value="Aperte" onclick="LigarImagem()"/>
+            <br /><br />
+            <img id="img_lig" src="Imagens/off.png" alt="Liga e Desliga"/>                
+        </div> 
+         <div class="painel_principal" id="opc2">
+             <p>Passe o mouse em cima da Imagem</p>
+                <div id="img_trocar"></div>
+        </div>
+       
+            <h2> Sagas </h2>
+            <h3>Intrumentos Mortais:</h3>
+	    <div class="container">
+            <table>
+            <tr>
+                <td><div class="img"><img src="Imagens/TL/IM01.jpg" alt="A Cidade dos Ossos" title=" A Cidade dos Ossos"/></div></td>
+                <td><div class="img"><img src="Imagens/TL/IM02.jpg" alt="A Cidade das Cinzas" title="A Cidade das Cinzas" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/IM03.jpg" alt="A Cidade de Vidro" title="A Cidade de Vidro" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/IM04.jpg" alt="A Cidade dos Anjos Caídos" title="A Cidade dos Anjos Caídos" /></div>   </td>
+                <td><div class="img"><img src="Imagens/TL/IM05.jpg" alt="A Cidade das Almas Perdidas" title="A Cidade das Almas Perdidas"/></div></td>
+                <td><div class="img"><img src="Imagens/TL/IM06.jpg" alt="A Cidade do Fogo Celestial" title="A Cidade do Fogo Celestial" /></div></td>
+            </tr>    
+                </table> </div>
+         <br />        
+        <h3>Os Heróis do Olimpo:</h3>
+	    <div class="container">
+             <table>
+            <tr>
+                <td><div class="img"><img src="Imagens/TL/HO01.jpg" alt="O Herói Perdido" title=" O Herói Perdido"/></div></td>
+                <td><div class="img"><img src="Imagens/TL/HO02.jpg" alt="filho de Neturno" title="O Filho de Neturno" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/HO03.jpg" alt="marca de Atena" title="A Marca de Atena" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/HO04.jpg" alt="casa de Hades" title="A Casa de Hades" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/HO05.jpg" alt="sangue olimpo" title="O Sangue do Olimpo"/></div></td>
+            </tr>    
+                 </table> </div>
+         <br />
+         <h3>Percy Jackson e os Olimpianos:</h3>
+	    <div class="container">
+            <table>
+            <tr>
+                <td><div class="img"><img src="Imagens/TL/pj0111.jpg" alt="O ladrao de raios" title=" O Ladrão de Raios"/></div></td>
+                <td><div class="img"><img src="Imagens/TL/pj022.jpg" alt="mar de monstros" title="O Mar de monstros" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/pj033.jpg" alt="maldição do tita" title="A Maldição do Titã" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/pj044.jpg" alt="batalha do labirinto" title="A Batalha do Labirinto" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/255.jpg" alt="ultimo olimpiano" title="O Último Olimpiano" /></div></td>
+            </tr>    
+                 </table> </div>
+        <br />
+        <h3>O Senhor dos Anéis:</h3>
+	    <div class="container">
+            <table>
+            <tr>
+                <td><div class="img"><img src="Imagens/TL/sda011.jpg" alt="a sociedade doa anel" title=" A Sociedade do Anel"/></div></td>
+                <td><div class="img"><img src="Imagens/TL/sda022.jpg" alt="duas torres" title="As Duas Torres" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/sda0333.jpg" alt="retorno do rei" title="O Retorno do Rei" /></div></td>
+             </tr>    
+                 </table> </div>
+      <br />
+        <hr />
+        <h2> Aleatórios </h2>     
+	    <div class="container">
+                  <table>
+            <tr>
+                <td><div class="img"><img src="Imagens/TL/hobb01.jpg" alt="hobbit" title="O Hobbit" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/cronicas.jpg" alt="cronicas de narnia" title="As crônicas de Nárnia" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/iracema.jpg" alt="Iracema" title="Iracema" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/cabana.jpg" alt="A Cabana" title="A Cabana" /></div></td>
+                <td><div class="img"><img src="Imagens/TL/alquimista.jpg" alt="alquimista" title="O Alquimista" /></div></td>
+            </tr>
+                 </table> </div>
+        
+        
+        
+        <hr />
+        <br />
+         <a href="Pagina-Inicial.html">Página Inicial</a>
+        <a href="Fontes.html">Fontes</a>
+    </body>
+</html>

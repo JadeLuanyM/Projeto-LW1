@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color:lightskyblue;
+    font-size: 14pt;
+}
+header {
+    font-family: 'Faustina', serif;
+    background-color: mistyrose;
+    color:red;
+    font-size: 4rem;
+    padding: 24px;
+    text-align: center;
+}
+header:hover {
+    color: blue;
+}
+#menu {
+    position: fixed;
+    border: 1px solid aqua;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: purple;
+    box-shadow: 3px 3px 3px purple;
+    transition: all 0.4s linear;
+}
+#menu:hover {
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: black;
+}
+#menu div {
+    width: 20px;
+    height: 3px;
+    margin: 4px 0px;
+    background-color: aqua;
+    transition: all 0.4s linear;
+    
+}
+#menu:hover div {
+    background-color: mistyrose;
+}
+#painel_menu {
+    position: fixed;
+    left: -250px;
+    top: 210px;
+    width: 250px;
+    height: 75px;
+    background-color: purple;
+    border: 1px solid lightskyblue;
+    box-shadow: 3px 3px 3px lightgray;
+    transition: left 0.4s linear;
+}
+.painel_principal {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 400px;    
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px gray;
+    width: 30%;
+}
+input {
+    color: inherit;    
+    font-weight: inherit;
+    font-size: inherit;    
+    text-shadow: 1px 1px wheat;
+    box-shadow: 3px 3px 3px wheat;
+    margin: 5px;
+    height: 27px;
+    width: 150px;
+}
+input:hover {
+    color: red;
+    border: 1px solid white;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.container {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: mistyrose;
+    width: 73%;
+    flex-wrap: wrap;
+}
+.img:hover {
+ transform: rotate(-5deg);
+ border: 5px double Gold;
+}
+h2 {
+   color: blue;
+    font-size: 3rem;
+   text-align: center;
+}
+h3 {
+    color: black;
+    text-align: center;
+   
+}
+a {
+    color: purple;
+    font-size: 14pt;
+   text-decoration: none;
+    
+}
+a:hover {
+    color: red;
+}
+.container2 {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: mistyrose;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.img1 {
+     text-align: center;
+}
+.titulo {
+    font-family: cursive, bold;
+}
+.container3 {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: mistyrose;
+    width: 95%;
+    flex-wrap: wrap;
+}
+p {
+    text-align: justify;
+}
+h4 {
+    font-size: 18pt;
+}

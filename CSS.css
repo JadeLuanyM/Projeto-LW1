@@ -1,0 +1,66 @@
+body {
+    background-color: antiquewhite;
+   font-family: TimesNewRoman;
+   text-align: center;
+   margin: 15;    
+}
+main {
+   background-color: antiquewhite;
+   width: 100%;
+   min-height: 100%;
+   padding: 10px;
+   top: 60px;
+   position: absolute;
+   z-index: 1;    
+}
+h1 {
+   background-color: white;
+   color: limegreen;
+   width: 60%;
+   border: 4px dotted black;
+   margin: 35px auto;
+   font-size: 44pt;
+   text-align: center;
+}
+h3 {
+   font-family: bold;
+}
+
+img {
+   border: 3px dashed BurlyWood;
+}
+nav {
+ width: 30%;
+height: 150%;
+top: 250px;
+right: 10;
+position: fixed;
+box-sizing: border-box; /* Borda dentro do elemento */
+   z-index: 5;
+}
+
+
+form {
+   font-family: Candara;
+   width: 70%;
+   border: 5px solid Olive;
+   margin: 10px auto;
+}
+form p {
+   font-size: 12pt;
+}
+input, select, textarea {
+   font-family: Candara;
+   font-size: 12pt;
+   color: brown;
+   font-weight: bold;
+}
+
+td, th {
+    border: 2px groove Tan;
+}
+a {
+   text-decoration: none;
+   color: red;
+   text-align: center;
+}
